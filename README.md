@@ -49,7 +49,9 @@ Loss: 0.5691210031509399, Accuracy: 0.7244898080825806
 - Round 3 of Model Design:
 - Increased number of Application types to 11 (up from 6, but still less than total 17 unique types in raw data).
 - Increased number of Classification types to 30 (up from 6, but still less than total 71 unique types in raw data).
-- Result:
+- Result: 215/215 - 0s - loss: 0.5737 - accuracy: 0.7280 - 390ms/epoch - 2ms/step
+Loss: 0.573708176612854, Accuracy: 0.7279883623123169
+- Round 3 Implications: increasing Application Types and Classification diversity slightly improved the accurance, but still did not reach 75% minimum threshold. 
 
 
 # Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
