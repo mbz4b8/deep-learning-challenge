@@ -36,7 +36,6 @@ The first round of the model design included the use of the below neurons, layer
 - Round 1 Model Result:  215/215 - 0s - loss: 0.5756 - accuracy: 0.7268 - 402ms/epoch - 2ms/step
 Loss: 0.5756490230560303, Accuracy: 0.7268221378326416
 
-What steps did you take in your attempts to increase model performance?
 Various steps were taken to attempt to improve the model to a minimum of 75% accuracy. 
 
 - Round 2 of Model Design:
