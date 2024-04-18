@@ -19,7 +19,9 @@ Data Preprocessing
   - SPECIAL_CONSIDERATIONS—Special considerations for application
   - ASK_AMT—Funding amount requested
   - Data not included as a "Feature" in model:  "EIN" and "NAME" were removed from the input data, as they are identifiers that are not useful for modeling purposes (and are not considered "feature" or "target").
-- 
+- Before training the model, an attempt was made to simplify the data by reducing the number of specific Application Types and Classifications as too many different factors may overtrain the model and reduce accuracy.
+  - Application Types were simplified by only included Application Types that received 950 or more applications. This resulted in 6 different Application Types for the model. 
+  - Classifications were simplified by only including Classifications taht received 1,880 or more applications. This resulted in 6 different Classifcation types for the model. 
 
 Compiling, Training, and Evaluating the Model
 
