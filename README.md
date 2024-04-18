@@ -23,6 +23,8 @@ Data Preprocessing
 
 Compiling, Training, and Evaluating the Model
 
+A deep neural network was selected (utilizing the sequential method) to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of an applicaiton receiving funding via a large volume of data points pulled from the application.
+
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 Were you able to achieve the target model performance?
