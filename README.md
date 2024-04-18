@@ -1,10 +1,10 @@
 # deep-learning-challenge
 
-Overview of the analysis: Explain the purpose of this analysis.
+# Overview of the analysis: Explain the purpose of this analysis.
 
 Results: Using bulleted lists and images to support your answers, address the following questions:
 
-Data Preprocessing
+# Data Preprocessing
 
 - Data utilized in the exercise was first preprocessed to prepare the data for the model. 
 - Target of the model = "IS_SUCCESSFUL" column, which indicates if the application was selected to be funded by Alphabet Soup. 
@@ -23,7 +23,7 @@ Data Preprocessing
   - Application Types were simplified by only included Application Types that received 950 or more applications. This resulted in 6 different Application Types for the model (down from 17 different types in the raw data). 
   - Classifications were simplified by only including Classifications taht received 1,880 or more applications. This resulted in 6 different Classifcation types for the model (down from the 71 different types in the raw data).
 
-Compiling, Training, and Evaluating the Model
+# Compiling, Training, and Evaluating the Model
 
 A deep neural network was selected (utilizing the sequential method) to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of an applicaiton receiving funding via a large volume of data points pulled from the application.
 
@@ -36,7 +36,7 @@ The first round of the model design included the use of the below neurons, layer
 - Round 1 Model Result:  215/215 - 0s - loss: 0.5756 - accuracy: 0.7268 - 402ms/epoch - 2ms/step
 Loss: 0.5756490230560303, Accuracy: 0.7268221378326416
 
-Various steps were taken to attempt to improve the model to a minimum of 75% accuracy. 
+# Various steps were taken to attempt to improve the model to a minimum of 75% accuracy. 
 
 - Round 2 of Model Design:
     - Hidden Layer 1 / 90 neurons / "relu" activation
@@ -52,4 +52,4 @@ Loss: 0.5691210031509399, Accuracy: 0.7244898080825806
 - Result:
 
 
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+# Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
