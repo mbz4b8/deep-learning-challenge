@@ -48,7 +48,9 @@ Loss: 0.5691210031509399, Accuracy: 0.7244898080825806
 - Round 2 Implications: increasing the number of Neurons did not result in an improvement in accuracy, instead it declined. Next step will test adjusting the binning strategy of the "Classification" data in order to increase diversity fo results for model to consider.
 
 - Round 3 of Model Design:
-- 
+- Increased number of Application types to 11 (up from 6, but still less than total 17 unique types in raw data).
+- Increased number of Classification types to 30 (up from 6, but still less than total 71 unique types in raw data).
+- Result:
 
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
