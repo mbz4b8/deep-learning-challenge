@@ -40,14 +40,15 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 
 ## Optimized Model #1 Design & Results   
 - Data was analyzed via 6x unique application types and 6x unique classifications
-- Layer 1: relu activation / 90 neurons
-- Layer 2: relu activation / 40 neurons
+- Layer 1: relu activation / 90 neurons (increased from 80 to optimize accuracy)
+- Layer 2: relu activation / 40 neurons (increased from 30 to optimize for accuracy)
 - Output Layer: sigmoid activation / 1 neuron
 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_o1_Accuracy.png" alt="Opt Model 1 Results" style="float:left; margin-right:10px;" />
 
 ## Optimized Model #2 Design & Results   
-- Data was analyzed via 11x unique application types and 30x unique classifications
+- Optimized Model #1 imrpoved slightly versus Original Model (72.73% accuracy versus 72.67%), but did not reach goal of 75% accuracy.
+- Optimized Model #2 revised the categorizations of the Application Types (11x unique types, up from 6x) and Classifications (30x unique types, up from 6x) in order to determine if more diverse data would improve model accuracy. 
 - Layer 1: relu activation / 90 neurons
 - Layer 2: relu activation / 40 neurons
 - Output Layer: sigmoid activation / 1 neuron
@@ -55,7 +56,8 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_o2_Accuracy.png" alt="Opt Model 2 Results" style="float:left; margin-right:10px;" /> 
 
 ## Optimized Model #3 Design & Results   
-- Data was analyzed via 11x unique application types and 30x unique classifications
+- Optimized MOdel #2 did not outperform Optimized Model #1 (resulted in 72.63$ versus 72.73%).
+- Optimized Model #3 utilized the same data features as Optimized Model #2, but instead new activation methods were applied to determine if accuracy could be improved. 
 - Layer 1: LeakyReLU activation / 90 neurons
 - Layer 2: PReLU activation / 40 neurons
 - Output Layer: sigmoid activation / 1 neuron
