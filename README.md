@@ -1,8 +1,9 @@
 # deep-learning-challenge
 
-# Overview of the analysis: Explain the purpose of this analysis.
-
-Results: Using bulleted lists and images to support your answers, address the following questions:
+# Project Background
+- Alphabet Soup Charity offers financial support to eligible applicants aiming to launch a successful new venture.
+- To streamline the application review process, the Charity seeks to develop a method to preliminarily assess applications and gauge their potential for success.
+- With a database comprising data from 34,000+ successful organizations previously funded by Alphabet Soup Charity, we aim to construct a predictive model to evaluate and categorize incoming applications based on their probability of success.
 
 # Data Preprocessing
 
