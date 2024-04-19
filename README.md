@@ -26,9 +26,8 @@
 
 # Compiling, Training, and Evaluating the Model
 
-A deep neural network was selected (utilizing the sequential method) to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of an applicaiton receiving funding via a large volume of data points pulled from the application.
+A deep neural network utilizing the sequential method was selected to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of success for the new applicant. 
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
 The first round of the model design included the use of the below neurons, layers and activation functions to test the accuracy of the intial set up. 
 - Round 1 of Model Design:
   - Hidden Layer 1 / 80 neurons / "relu" activation
