@@ -69,3 +69,7 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 - Optimized Model #1 was developed and could be applied to Alphabet Soup Charity's application process to predict the success rate of each new venture, but it only acheived a 72.73% success rate. If applying the process is an urgent business requirement, Alphabet Soup Charity should implement a second review process to ensure potentially viable ventures are not overlooked. 
 - We'd recommend additonal optimizations be applied to the Model design in order to acheive the desired 75% accuracy rate, which is an industry standard threshold for predictive models. This exploration applied small tweaks to the model that did not result in major improvements. Further optimizations should be investigated, utilizing automated methods like grid search or random search. These techniques systematically explore a range of hyperparameters to identify the combination that optimizes success rates.
 - If additional optimizations do not result in the desired accuracy, exploring a simpler model like logistic regression could be beneficial. Logistic regression is often effective for binary classification problems and may not suffer from overfitting as much as complex neural network models.
+
+#References:
+- IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/Links to an external site.
+- Assistance for this assignment was via class notes and ChatGPT. 
