@@ -21,14 +21,14 @@
   - ASK_AMT—Funding amount requested
   - Data not included as a "Feature" in model:  "EIN" and "NAME" were removed from the input data, as they are identifiers that are not useful for modeling purposes (and are not considered "feature" or "target").
 - Before training the model, an attempt was made to simplify the data by reducing the number of specific Application Types and Classifications as too many different factors may overtrain the model and reduce accuracy.
-  - Application Types were simplified by only included Application Types that received 950 or more applications. This resulted in 6 different Application Types for the model (down from 17 different types in the raw data). 
-  - Classifications were simplified by only including Classifications taht received 1,880 or more applications. This resulted in 6 different Classifcation types for the model (down from the 71 different types in the raw data).
+  - Application Types were simplified by only including types that received 950 or more applications. This resulted in 6 different Application Types for the model (down from 17 different types in the raw data). 
+  - Classifications were simplified by only including types that received 1,880 or more applications. This resulted in 6 different Classifcation types for the model (down from the 71 different types in the raw data).
 
 # Compiling, Training, and Evaluating the Model
 
-A deep neural network utilizing the sequential method was selected to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of success for the new applicant. 
+A deep neural network utilizing the sequential method was selected to predict the probability of the applicant's venture's sucess. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of success for the new applicant. 
 
-The goal of the Charity was to apply a model that had a minimum of 75% accuracy in predicting the success of applicants. The first iteration of the model acheived an accurate of 72.7% with 56.8% loss, so an additional three model designs were explored to optimize the outcome and achieve the goal of 75% accuracy. Below is a summary of each model design and its outcome. 
+The goal of the Charity was to apply a model that had a minimum of 75% accuracy in predicting the success of applicants. The first iteration of the model acheived an accuracy rating of 72.7% with 56.8% loss, so an additional three model designs were explored to optimize the outcome and achieve the goal of 75% accuracy. Below is a summary of each model design and its outcome. 
 
 ## Original Model Design & Results
 - Data was analyzed via 6x unique application types and 6x unique classifications
@@ -39,7 +39,7 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_Original_Accuracy.png" alt="Original Model Results" style="float:left; margin-right:10px;" />
 
 ## Optimized Model #1 Design & Results   
-- Data was analyzed via 6x unique application types and 6x unique classifications
+- Original Model did not acheive the desired 75% success rate. Model was re-run with additional neurons to increase power and improve accuracy.
 - Layer 1: relu activation / 90 neurons (increased from 80 to optimize accuracy)
 - Layer 2: relu activation / 40 neurons (increased from 30 to optimize for accuracy)
 - Output Layer: sigmoid activation / 1 neuron
@@ -47,7 +47,7 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_o1_Accuracy.png" alt="Opt Model 1 Results" style="float:left; margin-right:10px;" />
 
 ## Optimized Model #2 Design & Results   
-- Optimized Model #1 imrpoved slightly versus Original Model (72.73% accuracy versus 72.67%), but did not reach goal of 75% accuracy.
+- Optimized Model #1 improved slightly versus Original Model (72.73% accuracy versus 72.67%), but did not reach goal of 75% accuracy.
 - Optimized Model #2 revised the categorizations of the Application Types (11x unique types, up from 6x) and Classifications (30x unique types, up from 6x) in order to determine if more diverse data would improve model accuracy. 
 - Layer 1: relu activation / 90 neurons
 - Layer 2: relu activation / 40 neurons
@@ -56,7 +56,7 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_o2_Accuracy.png" alt="Opt Model 2 Results" style="float:left; margin-right:10px;" /> 
 
 ## Optimized Model #3 Design & Results   
-- Optimized MOdel #2 did not outperform Optimized Model #1 (resulted in 72.63$ versus 72.73%).
+- Optimized MOdel #2 did not outperform Optimized Model #1 (resulted in 72.63% versus 72.73%).
 - Optimized Model #3 utilized the same data features as Optimized Model #2, but instead new activation methods were applied to determine if accuracy could be improved. 
 - Layer 1: LeakyReLU activation / 90 neurons
 - Layer 2: PReLU activation / 40 neurons
@@ -66,6 +66,6 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 
 
 # Conclusion: 
-- Optimized Model #1 was developed and could be applied to Alphabet Soup Charity's application process to predict the success rate of each new venture, but it only acheived a 72.73% success rate. Additional review of each application predicted to be "not successful" should recevie a second review in order to ensure a venture is less likely to be successful.
-- We'd recommend additonal optimizations be applied to the Model design in order to acheive the desired 75% accuracy rate, which is an industry standard threshold for predictive models. This exploration applied small tweaks to the model that did not result in major improvements. Additional optimization methods should be explored, particulary hyparameter methods that automoate the process by programmatically selecting the right paramaeters to apply to maximize success rates.
-- If optimizatons do not result in desired accuracy, the team could consider exploring a Logistic Regression Model Analysis, which is a more simplified appraoch to a binary classification problem. The predication process may not require the complexity of neural network in order to acheive a higher accuracy rate, as the model may be overfitting itself via the complex algorithms and computing power. 
+- Optimized Model #1 was developed and could be applied to Alphabet Soup Charity's application process to predict the success rate of each new venture, but it only acheived a 72.73% success rate. If applying the process is an urgent business requirement, Alphabet Soup Charity should implement a second review process to ensure potentially viable ventures are not overlooked. 
+- We'd recommend additonal optimizations be applied to the Model design in order to acheive the desired 75% accuracy rate, which is an industry standard threshold for predictive models. This exploration applied small tweaks to the model that did not result in major improvements. Further optimizations should be investigated, utilizing automated methods like grid search or random search. These techniques systematically explore a range of hyperparameters to identify the combination that optimizes success rates.
+- If additional optimizations do not result in the desired accuracy, exploring a simpler model like logistic regression could be beneficial. Logistic regression is often effective for binary classification problems and may not suffer from overfitting as much as complex neural network models.
