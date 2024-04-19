@@ -28,7 +28,17 @@
 
 A deep neural network utilizing the sequential method was selected to predict the probability of the application receiving funding. Deep neural networks are specifically designed for binary classification tasks, making them ideal for providing the probability of success for the new applicant. 
 
-The first round of the model design included the use of the below neurons, layers and activation functions to test the accuracy of the intial set up. 
+The goal of the Charity was to apply a model that had a minimum of 75% accuracy in predicting the success of applicants. The first iteration of the model acheived an accurate of 72.7% with 56.8% loss, so an additional three model designs were explored to optimize the outcome and achieve the goal of 75% accuracy. Below is a summary of each model design and its outcome. 
+
+## Original Model Design
+- Data was analyzed via 6x unique application types and 6x unique classifications
+- Layer 1:  relu activation / 80 neurons
+- Layer 2: relu activation / 30 neurons
+- Output Layer: sigmoid activation / 1 neuron
+  
+
+
+The original model design resulted in 72.7% accuracy with 56.6% loss. The Charit The first round of the model design included the use of the below neurons, layers and activation functions to test the accuracy of the intial set up. 
 - Round 1 of Model Design:
   - Hidden Layer 1 / 80 neurons / "relu" activation
   - Hiddent Layer 2 / 30 neurons / "relu" activation
