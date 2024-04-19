@@ -65,4 +65,7 @@ The goal of the Charity was to apply a model that had a minimum of 75% accuracy 
 <img src="https://github.com/mbz4b8/deep-learning-challenge/blob/main/Model_Results/AlpahbetSoupCharity_o3_Accuracy.png" alt="Opt Model 3 Results" style="float:left; margin-right:10px;" /> 
 
 
-# Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+# Conclusion: 
+- Optimized Model #1 was developed and could be applied to Alphabet Soup Charity's application process to predict the success rate of each new venture, but it only acheived a 72.73% success rate. Additional review of each application predicted to be "not successful" should recevie a second review in order to ensure a venture is less likely to be successful.
+- We'd recommend additonal optimizations be applied to the Model design in order to acheive the desired 75% accuracy rate, which is an industry standard threshold for predictive models. This exploration applied small tweaks to the model that did not result in major improvements. Additional optimization methods should be explored, particulary hyparameter methods that automoate the process by programmatically selecting the right paramaeters to apply to maximize success rates.
+- If optimizatons do not result in desired accuracy, the team could consider exploring a Logistic Regression Model Analysis, which is a more simplified appraoch to a binary classification problem. The predication process may not require the complexity of neural network in order to acheive a higher accuracy rate, as the model may be overfitting itself via the complex algorithms and computing power. 
